@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Great+Vibes|Josefin+Sans|Oswald|Patua+One|Satisfy&display=swap');
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    margin: 0%;
+    height:400px;
+    width: 100%;
+    border: 1px solid blue;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    height:60px;
+    border: 2px solid red;
+    background-color: #333;
+    text-align:center;
+    padding-top:13px ;
+    z-index: 1;
+}
+.header h2{
+    font-family: fantasy;
+    letter-spacing: 3px;
+    font-weight: 100;
+    color:white;
+    text-shadow: 0 0 10px #0078d7;
+}
+.contest{
+    position: relative;
+    margin: 0% 0% 5% 0%;
+    display:flex;
+    /* height:400px; */
+    object-fit: cover;
+    background-color: rgb(247, 247, 247); 
+    
+}
+.pic{
+    align-items: center;
+    position: relative;
+    display:inline-block;
+    height:400px;
+    width: 50%;
+    background-image:url('images/selfie.png');
+    object-fit:fill;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    border-radius:15px;  
+    border:3px solid purple;
+}
+.pic img{
+    
+    align-items: center;
+    /* position: relative; */
+    display:inline-block;
+    height:100%;
+    width:100%;
+    object-fit:fill;
+    border-radius:15px;   
+}
+/* .pic img{position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 50%;
+} */
+#details{
+    align-items: center;
+    position: relative;
+    /* height:400px; */
+    width: 50%;
+    border-radius:15px;
+    /* background-color: rgb(238, 238, 238); */
+}
+.details{
+    display:inline-block;
+    padding:5%;
+}
+.details ul{
+    font-family: 'Grenze', serif;
+    color:rgb(61, 106, 119);
+    font-size:1.2rem;
+}
+.details ul li{
+    margin:4% 2% 3% 2%;
+}
+.details h3{
+    color: blue;
+    font-family:fantasy;
+    font-weight:400;
+}
+.details button{
+    border:1px solid rgb(0, 195, 255);
+    display: inline-block;
+    color: rgb(0, 195, 255);
+    background: #333;
+    border-radius:6px;
+    margin:4%;
+    cursor: pointer;
+    height:2.3rem;
+    font-size:1.2rem;
+    padding:1% 2% 1% 2%;
+    letter-spacing:2px;
+}
+.details button:hover{
+    background:whitesmoke;
+    border: 1px solid darkred;
+}
+@media only screen and (max-width:768px){
+    .contest{
+        display:block;
+    }
+    .pic{
+        width: 100%;
+        /* left:25%; */
+        display: inline-block;
+    }
+    #details{
+        width:100%;
+        
+    }
+    .details{
+        width:100%;
+        padding:5%;
+    }
+    .details ul{
+        font-family: 'Grenze', serif;
+        color:rgb(61, 106, 119);
+        font-size:1.2rem;
+        padding-left:4%;
+        border-radius:10px;
+    }
+    .details ul li{
+        margin:4% 2% 3% 2%;
+    }
+    .details h3{
+        color: blue;
+        font-family:fantasy;
+        font-weight:400;
+    }
+}
